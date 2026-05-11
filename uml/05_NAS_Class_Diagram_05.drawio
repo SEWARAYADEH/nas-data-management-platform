@@ -1,0 +1,79 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="NAS-Class-Diagram-05" name="05 - Class Diagram">
+    <mxGraphModel dx="1847" dy="1111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" background="#F5F8FB" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=48;fontStyle=1;fontColor=#0A2540;fontFamily=Segoe UI;" value="05 - Class Diagram" vertex="1">
+          <mxGeometry height="70" width="1800" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontStyle=1;fontColor=#0877F2;fontFamily=Segoe UI;" value="NAS Data Management Platform – Phase 1" vertex="1">
+          <mxGeometry height="45" width="1800" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="File" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0877F2;strokeWidth=3;fontSize=22;fontColor=#0A2540;fontFamily=Segoe UI;align=left;spacingLeft=18;verticalAlign=top;" value="&lt;b&gt;File&lt;/b&gt;&lt;hr&gt;- name: string&lt;br&gt;- path: string&lt;br&gt;- size: string&lt;br&gt;- type: string&lt;br&gt;- modified: date&lt;hr&gt;" vertex="1">
+          <mxGeometry height="340" width="310" x="100" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="FileService" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0877F2;strokeWidth=3;fontSize=22;fontColor=#0A2540;fontFamily=Segoe UI;align=left;spacingLeft=18;verticalAlign=top;" value="&lt;b&gt;FileService&lt;/b&gt;&lt;hr&gt;&lt;br&gt;&lt;hr&gt;+ getFiles(path)&lt;br&gt;+ renameFile(file)&lt;br&gt;+ detectBadNames()" vertex="1">
+          <mxGeometry height="340" width="320" x="490" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="AIService" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0877F2;strokeWidth=3;fontSize=22;fontColor=#0A2540;fontFamily=Segoe UI;align=left;spacingLeft=18;verticalAlign=top;" value="&lt;b&gt;AIService&lt;/b&gt;&lt;hr&gt;&lt;br&gt;&lt;hr&gt;+ parseCommand(message)&lt;br&gt;+ detectIssues(files)&lt;br&gt;+ generateResponse()" vertex="1">
+          <mxGeometry height="340" width="340" x="950" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ChatController" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0877F2;strokeWidth=3;fontSize=22;fontColor=#0A2540;fontFamily=Segoe UI;align=left;spacingLeft=18;verticalAlign=top;" value="&lt;b&gt;ChatController&lt;/b&gt;&lt;hr&gt;&lt;br&gt;&lt;hr&gt;+ handleChatRequest()&lt;br&gt;+ sendToAI()" vertex="1">
+          <mxGeometry height="340" width="330" x="1390" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="FileController" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0877F2;strokeWidth=3;fontSize=22;fontColor=#0A2540;fontFamily=Segoe UI;align=left;spacingLeft=18;verticalAlign=top;" value="&lt;b&gt;FileController&lt;/b&gt;&lt;hr&gt;&lt;br&gt;&lt;hr&gt;+ getFiles()&lt;br&gt;+ renameFile()" vertex="1">
+          <mxGeometry height="300" width="330" x="205" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="ActivityLog" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0877F2;strokeWidth=3;fontSize=22;fontColor=#0A2540;fontFamily=Segoe UI;align=left;spacingLeft=18;verticalAlign=top;" value="&lt;b&gt;ActivityLog&lt;/b&gt;&lt;hr&gt;&lt;br&gt;&lt;hr&gt;+ addLog(entry)&lt;br&gt;+ getLogs()" vertex="1">
+          <mxGeometry height="300" width="330" x="735" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="ConnectService" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0877F2;strokeWidth=3;fontSize=22;fontColor=#0A2540;fontFamily=Segoe UI;align=left;spacingLeft=18;verticalAlign=top;" value="&lt;b&gt;ConnectService&lt;/b&gt;&lt;hr&gt;&lt;br&gt;&lt;hr&gt;+ uploadFiles()&lt;br&gt;+ connectAPI()&lt;br&gt;+ connectDatabase()" vertex="1">
+          <mxGeometry height="300" width="350" x="1290" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="ChatController" style="endArrow=block;html=1;rounded=0;strokeColor=#0877F2;strokeWidth=3;" target="AIService" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="FileController" style="endArrow=block;html=1;rounded=0;strokeColor=#0877F2;strokeWidth=3;" target="FileService" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="FileService" style="endArrow=block;html=1;rounded=0;strokeColor=#0877F2;strokeWidth=3;" target="File" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeColor=#0877F2;strokeWidth=3;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="930" y="260" />
+              <mxPoint x="850" y="200" />
+              <mxPoint x="390" y="260" />
+            </Array>
+            <mxPoint x="930" y="260" as="sourcePoint" />
+            <mxPoint x="390" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="FileService" style="endArrow=block;html=1;rounded=0;strokeColor=#0877F2;strokeWidth=3;" target="ActivityLog" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="ChatController" style="endArrow=block;html=1;rounded=0;strokeColor=#0877F2;strokeWidth=3;" target="ActivityLog" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1555" y="585" />
+              <mxPoint x="900" y="585" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="ConnectService" style="endArrow=block;html=1;rounded=0;strokeColor=#0877F2;strokeWidth=3;" target="FileService" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1465" y="600" />
+              <mxPoint x="680" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#87BFFF;strokeWidth=2;fontSize=24;fontColor=#0A2540;fontFamily=Segoe UI;align=center;verticalAlign=middle;" value="ℹ  This diagram represents the logical structure of the system and the interaction between controllers, services, and data models." vertex="1">
+          <mxGeometry height="85" width="1560" x="120" y="1040" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

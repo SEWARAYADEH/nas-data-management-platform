@@ -1,0 +1,5 @@
+✔ AI command parsing
+✔ Safe confirmation layer (modal)
+✔ Simulation before execution
+✔ Bulk automation
+✔ Structured frontend + backend integration

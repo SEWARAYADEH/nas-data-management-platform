@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="04 - State Diagram">
+    <mxGraphModel dx="1800" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F5F8;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="0" y="0" width="1800" height="1200" as="geometry"/>
+        </mxCell>
+        <mxCell id="header" value="04 - State Diagram" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#B8DDF7;strokeWidth=1.5;fontColor=#0A2540;fontSize=34;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=125;" parent="1" vertex="1">
+          <mxGeometry x="40" y="35" width="1720" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="NAS Data Management Platform – Phase 1 | Safe Operation Confirmation Flow" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#11679B;fontSize=18;align=left;" parent="1" vertex="1">
+          <mxGeometry x="170" y="98" width="850" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="logo" value="NAS&lt;br&gt;&lt;font style='font-size:7px'&gt;Data Management Platform&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#0A2540;fontSize=16;fontStyle=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="75" y="72" width="70" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="goal" value="&lt;b&gt;&lt;font color='#0877F2'&gt;Goal:&lt;/font&gt;&lt;/b&gt; Show how critical file operations move through request, confirmation, execution, result handling, and activity logging before returning to the idle state." style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#B8DDF7;fontColor=#405A73;fontSize=15;align=left;spacingLeft=20;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="40" y="165" width="1720" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="idle" value="Idle" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#0877F2;strokeWidth=2;fontColor=#0A2540;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="770" y="270" width="260" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="requested" value="Operation Requested" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#0877F2;strokeWidth=2;fontColor=#0A2540;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="770" y="380" width="260" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="modal" value="Show Confirmation Modal" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFF3E4;strokeColor=#FF8A00;strokeWidth=2;fontColor=#0A2540;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="770" y="490" width="260" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="waiting" value="Waiting User Action" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFF3E4;strokeColor=#FF8A00;strokeWidth=2;fontColor=#0A2540;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="770" y="600" width="260" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="confirmed" value="Confirmed" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#E9FBF4;strokeColor=#18A56B;strokeWidth=2;fontColor=#0A2540;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="520" y="720" width="230" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="cancelled" value="Cancelled" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFF3E4;strokeColor=#FF8A00;strokeWidth=2;fontColor=#0A2540;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="720" width="230" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="executing" value="Executing Operation" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#0877F2;strokeWidth=2;fontColor=#0A2540;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="520" y="840" width="230" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="success" value="Success" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#E9FBF4;strokeColor=#18A56B;strokeWidth=2;fontColor=#0A2540;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="380" y="960" width="220" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="failed" value="Failed" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFEAEA;strokeColor=#E53935;strokeWidth=2;fontColor=#0A2540;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="660" y="960" width="220" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="logged" value="Activity Logged" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;fillColor=#FFFFFF;strokeColor=#0877F2;strokeWidth=2;fontColor=#0A2540;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="970" y="960" width="250" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="start" value="" style="ellipse;html=1;shape=ellipse;fillColor=#0A2540;strokeColor=#0A2540;" parent="1" vertex="1">
+          <mxGeometry x="885" y="245" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_start" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7A93AA;strokeWidth=2;endArrow=block;endFill=1;fontColor=#0A2540;fontSize=13;" parent="1" edge="1" source="start" target="idle">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" value="User triggers action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0877F2;strokeWidth=2;endArrow=block;endFill=1;fontColor=#0A2540;fontSize=13;" parent="1" edge="1" source="idle" target="requested">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="Prepare operation details" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF8A00;strokeWidth=2;endArrow=block;endFill=1;fontColor=#0A2540;fontSize=13;" parent="1" edge="1" source="requested" target="modal">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="Display modal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF8A00;strokeWidth=2;endArrow=block;endFill=1;fontColor=#0A2540;fontSize=13;" parent="1" edge="1" source="modal" target="waiting">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="User clicks Confirm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#18A56B;strokeWidth=2;endArrow=block;endFill=1;fontColor=#0A2540;fontSize=13;" parent="1" edge="1" source="waiting" target="confirmed">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="User clicks Cancel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF8A00;strokeWidth=2;endArrow=block;endFill=1;fontColor=#0A2540;fontSize=13;" parent="1" edge="1" source="waiting" target="cancelled">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" value="Start execution" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0877F2;strokeWidth=2;endArrow=block;endFill=1;fontColor=#0A2540;fontSize=13;" parent="1" edge="1" source="confirmed" target="executing">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" value="Completed" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#18A56B;strokeWidth=2;endArrow=block;endFill=1;fontColor=#0A2540;fontSize=13;" parent="1" edge="1" source="executing" target="success">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" value="Error occurred" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E53935;strokeWidth=2;endArrow=block;endFill=1;fontColor=#0A2540;fontSize=13;" parent="1" edge="1" source="executing" target="failed">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e9" value="Return without changes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7A93AA;strokeWidth=2;endArrow=block;endFill=1;fontColor=#0A2540;fontSize=13;" parent="1" edge="1" source="cancelled" target="idle">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e10" value="Log success event" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#18A56B;strokeWidth=2;endArrow=block;endFill=1;fontColor=#0A2540;fontSize=13;" parent="1" edge="1" source="success" target="logged">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e11" value="Log failure event" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E53935;strokeWidth=2;endArrow=block;endFill=1;fontColor=#0A2540;fontSize=13;" parent="1" edge="1" source="failed" target="logged">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e12" value="Ready for next operation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0877F2;strokeWidth=2;endArrow=block;endFill=1;fontColor=#0A2540;fontSize=13;" parent="1" edge="1" source="logged" target="idle">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend" value="&lt;b&gt;&lt;font style='font-size:20px'&gt;Legend&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;font color='#0877F2'&gt;■&lt;/font&gt; Normal state&lt;br&gt;&lt;font color='#FF8A00'&gt;■&lt;/font&gt; Confirmation / decision&lt;br&gt;&lt;font color='#18A56B'&gt;■&lt;/font&gt; Success path&lt;br&gt;&lt;font color='#E53935'&gt;■&lt;/font&gt; Failure path" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#B8DDF7;fontColor=#0A2540;fontSize=16;align=left;spacingLeft=18;verticalAlign=top;spacingTop=14;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="590" width="360" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="notes" value="&lt;b&gt;&lt;font color='#0877F2' style='font-size:22px'&gt;Notes / Comments:&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;This diagram shows how the system ensures safe execution by requiring user confirmation before performing critical operations. All actions are logged to maintain traceability." style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#B8DDF7;fontColor=#405A73;fontSize=16;align=left;spacingLeft=20;verticalAlign=top;spacingTop=16;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1080" width="1720" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="footer" value="Prepared for Phase 1 Submission | NAS Data Management Platform" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#7A93AA;fontSize=13;align=right;" parent="1" vertex="1">
+          <mxGeometry x="1210" y="1165" width="550" height="25" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

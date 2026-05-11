@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="02 - Component Diagram">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3F8FC;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="0" y="0" width="1500" height="1000" as="geometry"/>
+        </mxCell>
+        <mxCell id="header" value="02 - Component Diagram" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#B8DDF7;fontColor=#0A2540;strokeWidth=1.5;align=left;verticalAlign=middle;spacingLeft=115;fontSize=30;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="30" width="1440" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="NAS Data Management Platform | Phase 1 UML Design" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#11679B;fontSize=17;align=left;" parent="1" vertex="1">
+          <mxGeometry x="150" y="86" width="600" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="logo" value="NAS&lt;br&gt;&lt;font style='font-size:6px'&gt;Data Management Platform&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#0A2540;fontSize=15;fontStyle=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="58" y="62" width="65" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="goal" value="&lt;b&gt;&lt;font color='#0877F2'&gt;Goal:&lt;/font&gt;&lt;/b&gt; Show the Phase 1 architecture and how UI screens, API routes, services, and future integrations are separated." style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#B8DDF7;fontColor=#405A73;fontSize=13;align=left;spacingLeft=18;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="30" y="145" width="1440" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="frontend" value="React Frontend" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#0877F2;strokeWidth=2;fontColor=#0A2540;fontStyle=1;fontSize=18;align=left;spacingLeft=14;verticalAlign=top;spacingTop=12;" parent="1" vertex="1">
+          <mxGeometry x="60" y="265" width="320" height="380" as="geometry"/>
+        </mxCell>
+        <mxCell id="f1" value="Dashboard Layout" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="78" y="313" width="288" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="f2" value="File Explorer Screen" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="78" y="354" width="288" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="f3" value="AI Assistant Screen" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="78" y="395" width="288" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="f4" value="Connect &amp; Analyze Screen" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="78" y="436" width="288" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="f5" value="Activity Log / Details Panel" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="78" y="477" width="288" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="api" value="API Layer" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#E9F8FF;strokeColor=#00AEEF;strokeWidth=2;fontColor=#0A2540;fontStyle=1;fontSize=18;align=left;spacingLeft=14;verticalAlign=top;spacingTop=12;" parent="1" vertex="1">
+          <mxGeometry x="450" y="305" width="220" height="220" as="geometry"/>
+        </mxCell>
+        <mxCell id="api1" value="Axios Client" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="468" y="354" width="184" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="api2" value="GET /api/files" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="468" y="395" width="184" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="api3" value="POST /api/chat" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="468" y="436" width="184" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="api4" value="POST /api/files/rename" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="468" y="477" width="184" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="backend" value="Node.js Backend" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#0877F2;strokeWidth=2;fontColor=#0A2540;fontStyle=1;fontSize=18;align=left;spacingLeft=14;verticalAlign=top;spacingTop=12;" parent="1" vertex="1">
+          <mxGeometry x="740" y="265" width="320" height="380" as="geometry"/>
+        </mxCell>
+        <mxCell id="b1" value="Express Server" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="758" y="313" width="288" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="b2" value="Files Routes" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="758" y="354" width="288" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="b3" value="Chat Routes" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="758" y="395" width="288" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="b4" value="Validation / Error Handling" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="758" y="436" width="288" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="b5" value="Environment Configuration" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="758" y="477" width="288" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="services" value="Services + Integrations" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#18A56B;strokeWidth=2;fontColor=#0A2540;fontStyle=1;fontSize=18;align=left;spacingLeft=14;verticalAlign=top;spacingTop=12;" parent="1" vertex="1">
+          <mxGeometry x="1130" y="255" width="335" height="470" as="geometry"/>
+        </mxCell>
+        <mxCell id="s1" value="Mock File Service" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="1148" y="303" width="298" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="s2" value="AI Service" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="1148" y="344" width="298" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="s3" value="OpenAI Optional Client" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="1148" y="385" width="298" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="s4" value="Fallback Command Engine" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="1148" y="426" width="298" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="s5" value="Future SMB / API / Database" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#C8E2F6;fontColor=#50677E;fontSize=12;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="1148" y="467" width="298" height="31" as="geometry"/>
+        </mxCell>
+        <mxCell id="future" value="Future Expansion Ready&lt;br&gt;&lt;font style='font-size:12px;font-style:normal'&gt;• Real NAS via SMB&lt;br&gt;• External API links&lt;br&gt;• Database indexing&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E8FFF5;strokeColor=#18A56B;strokeWidth=2;fontColor=#0A2540;fontStyle=1;fontSize=18;align=left;spacingLeft=14;verticalAlign=top;spacingTop=12;" parent="1" vertex="1">
+          <mxGeometry x="1130" y="795" width="335" height="96" as="geometry"/>
+        </mxCell>
+        <mxCell id="rule" value="&lt;b&gt;&lt;font style='font-size:20px' color='#0A2540'&gt;Architecture Rule&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;UI, API, backend routes, and services are separated to keep the code clean and extensible." style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#B8DDF7;fontColor=#405A73;fontSize=13;align=left;spacingLeft=18;verticalAlign=top;spacingTop=12;" parent="1" vertex="1">
+          <mxGeometry x="60" y="675" width="320" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="notes" value="&lt;b&gt;&lt;font color='#0877F2' style='font-size:20px'&gt;Notes / Comments:&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. React screens are isolated from backend details through the Axios API layer.&lt;br&gt;2. Files Routes and Chat Routes keep backend responsibilities separated.&lt;br&gt;3. AI Service supports optional OpenAI integration while fallback mode keeps the demo stable.&lt;br&gt;4. Mock File Service represents Phase 1 NAS behavior and can later be replaced with SMB or database services." style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#B8DDF7;fontColor=#405A73;fontSize=13;align=left;spacingLeft=18;verticalAlign=top;spacingTop=12;" parent="1" vertex="1">
+          <mxGeometry x="30" y="795" width="1045" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="footer" value="Prepared for Phase 1 Submission | NAS Data Management Platform" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#7A93AA;fontSize=12;align=right;" parent="1" vertex="1">
+          <mxGeometry x="1000" y="965" width="470" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0877F2;strokeWidth=2;endArrow=block;endFill=1;" parent="1" edge="1" source="frontend" target="api">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1label" value="HTTP requests" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontColor=#0877F2;fillColor=#FFFFFF;strokeColor=none;" parent="e1" vertex="1">
+          <mxGeometry x="0" y="0" width="100" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0877F2;strokeWidth=2;endArrow=block;endFill=1;" parent="1" edge="1" source="api" target="backend">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2label" value="REST API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontColor=#0877F2;fillColor=#FFFFFF;strokeColor=none;" parent="e2" vertex="1">
+          <mxGeometry x="0" y="0" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#18A56B;strokeWidth=2;endArrow=block;endFill=1;" parent="1" edge="1" source="backend" target="services">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3label" value="Service calls" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontColor=#18A56B;fillColor=#FFFFFF;strokeColor=none;" parent="e3" vertex="1">
+          <mxGeometry x="0" y="0" width="100" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#18A56B;strokeWidth=2;endArrow=block;endFill=1;" parent="1" edge="1" source="services" target="future">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

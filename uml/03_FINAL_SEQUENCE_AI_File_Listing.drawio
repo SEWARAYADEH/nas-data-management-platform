@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net">
+	<diagram name="Sequence Clean">
+		<mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" page="1" pageWidth="1400" pageHeight="900">
+			<root>
+				<mxCell id="0"/>
+				<mxCell id="1" parent="0"/>
+				<mxCell id="actor0" value="User" style="rounded=1;strokeColor=#0A2540;fillColor=#FFFFFF;fontStyle=1;" parent="1" vertex="1">
+					<mxGeometry x="100" y="100" width="100" height="40" as="geometry"/>
+				</mxCell>
+				<mxCell id="line0" value="" style="shape=line;dashed=1;strokeColor=#999999;" parent="1" vertex="1">
+					<mxGeometry x="150" y="140" width="0" height="600" as="geometry"/>
+				</mxCell>
+				<mxCell id="actor1" value="Frontend" style="rounded=1;strokeColor=#0A2540;fillColor=#FFFFFF;fontStyle=1;" parent="1" vertex="1">
+					<mxGeometry x="300" y="100" width="100" height="40" as="geometry"/>
+				</mxCell>
+				<mxCell id="line1" value="" style="shape=line;dashed=1;strokeColor=#999999;" parent="1" vertex="1">
+					<mxGeometry x="350" y="140" width="0" height="600" as="geometry"/>
+				</mxCell>
+				<mxCell id="actor2" value="Chat API" style="rounded=1;strokeColor=#0A2540;fillColor=#FFFFFF;fontStyle=1;" parent="1" vertex="1">
+					<mxGeometry x="500" y="100" width="100" height="40" as="geometry"/>
+				</mxCell>
+				<mxCell id="line2" value="" style="shape=line;dashed=1;strokeColor=#999999;" parent="1" vertex="1">
+					<mxGeometry x="550" y="140" width="0" height="600" as="geometry"/>
+				</mxCell>
+				<mxCell id="actor3" value="AI Service" style="rounded=1;strokeColor=#0A2540;fillColor=#FFFFFF;fontStyle=1;" parent="1" vertex="1">
+					<mxGeometry x="700" y="100" width="100" height="40" as="geometry"/>
+				</mxCell>
+				<mxCell id="line3" value="" style="shape=line;dashed=1;strokeColor=#999999;" parent="1" vertex="1">
+					<mxGeometry x="750" y="140" width="0" height="600" as="geometry"/>
+				</mxCell>
+				<mxCell id="actor4" value="Files API" style="rounded=1;strokeColor=#0A2540;fillColor=#FFFFFF;fontStyle=1;" parent="1" vertex="1">
+					<mxGeometry x="900" y="100" width="100" height="40" as="geometry"/>
+				</mxCell>
+				<mxCell id="line4" value="" style="shape=line;dashed=1;strokeColor=#999999;" parent="1" vertex="1">
+					<mxGeometry x="950" y="140" width="0" height="600" as="geometry"/>
+				</mxCell>
+				<mxCell id="actor5" value="File Service" style="rounded=1;strokeColor=#0A2540;fillColor=#FFFFFF;fontStyle=1;" parent="1" vertex="1">
+					<mxGeometry x="1100" y="100" width="100" height="40" as="geometry"/>
+				</mxCell>
+				<mxCell id="line5" value="" style="shape=line;dashed=1;strokeColor=#999999;" parent="1" vertex="1">
+					<mxGeometry x="1150" y="140" width="0" height="600" as="geometry"/>
+				</mxCell>
+				<mxCell id="actor6" value="UI" style="rounded=1;strokeColor=#0A2540;fillColor=#FFFFFF;fontStyle=1;" parent="1" vertex="1">
+					<mxGeometry x="1300" y="100" width="100" height="40" as="geometry"/>
+				</mxCell>
+				<mxCell id="line6" value="" style="shape=line;dashed=1;strokeColor=#999999;" parent="1" vertex="1">
+					<mxGeometry x="1350" y="140" width="0" height="600" as="geometry"/>
+				</mxCell>
+				<mxCell id="e0" value="1. Show files in /Work" style="endArrow=block;strokeColor=#0A2540;fontSize=11;" parent="1" edge="1" source="actor0" target="actor1">
+					<mxGeometry relative="1" as="geometry"/>
+				</mxCell>
+				<mxCell id="e1" value="2. POST /api/chat" style="endArrow=block;strokeColor=#0A2540;fontSize=11;" parent="1" edge="1" source="actor1" target="actor2">
+					<mxGeometry relative="1" as="geometry"/>
+				</mxCell>
+				<mxCell id="e2" value="3. send message" style="endArrow=block;strokeColor=#0A2540;fontSize=11;" parent="1" edge="1" source="actor2" target="actor3">
+					<mxGeometry relative="1" as="geometry"/>
+				</mxCell>
+				<mxCell id="e3" value="4. return: list_files /Work" style="endArrow=block;strokeColor=#0A2540;fontSize=11;" parent="1" edge="1" source="actor3" target="actor2">
+					<mxGeometry relative="1" as="geometry"/>
+				</mxCell>
+				<mxCell id="e4" value="5. action response" style="endArrow=block;strokeColor=#0A2540;fontSize=11;" parent="1" edge="1" source="actor2" target="actor1">
+					<mxGeometry relative="1" as="geometry"/>
+				</mxCell>
+				<mxCell id="e5" value="6. GET /api/files" style="endArrow=block;strokeColor=#0A2540;fontSize=11;" parent="1" edge="1" source="actor1" target="actor4">
+					<mxGeometry relative="1" as="geometry"/>
+				</mxCell>
+				<mxCell id="e6" value="7. read files" style="endArrow=block;strokeColor=#0A2540;fontSize=11;" parent="1" edge="1" source="actor4" target="actor5">
+					<mxGeometry relative="1" as="geometry"/>
+				</mxCell>
+				<mxCell id="e7" value="8. return list" style="endArrow=block;strokeColor=#0A2540;fontSize=11;" parent="1" edge="1" source="actor5" target="actor4">
+					<mxGeometry relative="1" as="geometry"/>
+				</mxCell>
+				<mxCell id="e8" value="9. send data" style="endArrow=block;strokeColor=#0A2540;fontSize=11;" parent="1" edge="1" source="actor4" target="actor1">
+					<mxGeometry relative="1" as="geometry"/>
+				</mxCell>
+				<mxCell id="e9" value="10. update UI" style="endArrow=block;strokeColor=#0A2540;fontSize=11;" parent="1" edge="1" source="actor1" target="actor6">
+					<mxGeometry relative="1" as="geometry"/>
+				</mxCell>
+			</root>
+		</mxGraphModel>
+	</diagram>
+</mxfile>
